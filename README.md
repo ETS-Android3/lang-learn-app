@@ -28,7 +28,6 @@ ui: the pages for the homepage navigation side bar
 Other: main activity & settings (settings is currently useless, just a placeholder to test things out).
 
 ## Current Issues:
-- When deleting items from saved, they remain bookmarked when they shouldn't be (simple fix, just need to get to it)
 - Vocab mistakes (theoretically simple, but there are a lot of words and I actually don't know japanese)
 - Work on database to save after close
 - Formatting issues: emulator is a generic phone and works fine, but I have a phone with a skinny screen

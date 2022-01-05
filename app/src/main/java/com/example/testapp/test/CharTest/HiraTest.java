@@ -1,4 +1,4 @@
-package com.example.testapp.test;
+package com.example.testapp.test.CharTest;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.testapp.Data.CharactersTest;
 import com.example.testapp.Data.Initiate;
-import com.example.testapp.HomeOptions.Katakana.KatakanaTestOp;
+import com.example.testapp.HomeOptions.Hiragana.HiraganaTestOp;
 import com.example.testapp.R;
 import com.example.testapp.test.Pages.Correct;
 import com.example.testapp.test.Pages.CorrectRecognition;
@@ -18,22 +18,22 @@ import com.example.testapp.test.Pages.Incorrect;
 
 import java.util.Objects;
 
-public class kata_test extends AppCompatActivity {
-    CharactersTest c = KatakanaTestOp.c;
-    CharactersTest[] a = KatakanaTestOp.a;
-    CharactersTest[] k = KatakanaTestOp.k;
-    CharactersTest[] s = KatakanaTestOp.s;
-    CharactersTest[] t = KatakanaTestOp.t;
-    CharactersTest[] n = KatakanaTestOp.n;
-    CharactersTest[] h = KatakanaTestOp.h;
-    CharactersTest[] m = KatakanaTestOp.m;
-    CharactersTest[] yw = KatakanaTestOp.yw;
-    CharactersTest[] r = KatakanaTestOp.r;
-    CharactersTest[] g = KatakanaTestOp.g;
-    CharactersTest[] z = KatakanaTestOp.z;
-    CharactersTest[] d = KatakanaTestOp.d;
-    CharactersTest[] b = KatakanaTestOp.b;
-    CharactersTest[] p = KatakanaTestOp.p;
+public class HiraTest extends AppCompatActivity {
+    CharactersTest c = HiraganaTestOp.c;
+    CharactersTest[] a = HiraganaTestOp.a;
+    CharactersTest[] k = HiraganaTestOp.k;
+    CharactersTest[] s = HiraganaTestOp.s;
+    CharactersTest[] t = HiraganaTestOp.t;
+    CharactersTest[] n = HiraganaTestOp.n;
+    CharactersTest[] h = HiraganaTestOp.h;
+    CharactersTest[] m = HiraganaTestOp.m;
+    CharactersTest[] yw = HiraganaTestOp.yw;
+    CharactersTest[] r = HiraganaTestOp.r;
+    CharactersTest[] g = HiraganaTestOp.g;
+    CharactersTest[] z = HiraganaTestOp.z;
+    CharactersTest[] d = HiraganaTestOp.d;
+    CharactersTest[] b = HiraganaTestOp.b;
+    CharactersTest[] p = HiraganaTestOp.p;
     private TextView character;
     private Button option1;
     private Button option2;
@@ -46,8 +46,8 @@ public class kata_test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hira_test);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        Correct.hiraTrue = false;
-        Correct.kataTrue = true;
+        Correct.hiraTrue = true;
+        Correct.kataTrue = false;
         CorrectRecognition.hiraTrue = false;
         CorrectRecognition.kataTrue = false;
 
@@ -67,39 +67,39 @@ public class kata_test extends AppCompatActivity {
             if(option1.getText() == c.getCt()[c.getCurrentIndex()].getAnswer()){
                 //go to you are right page & correct counter++
                 c.incrementCorrectCount(1);
-                startActivity(new Intent(kata_test.this, Correct.class));
+                startActivity(new Intent(HiraTest.this, Correct.class));
             } else{
                 //go to incorrect page page
-                startActivity(new Intent(kata_test.this, Incorrect.class));
+                startActivity(new Intent(HiraTest.this, Incorrect.class));
             }
         });
         option2.setOnClickListener(view -> {
             if(option2.getText() == c.getCt()[c.getCurrentIndex()].getAnswer()){
                 c.incrementCorrectCount(1);
-                startActivity(new Intent(kata_test.this, Correct.class));
+                startActivity(new Intent(HiraTest.this, Correct.class));
             } else{
                 //go to false page
-                startActivity(new Intent(kata_test.this, Incorrect.class));
+                startActivity(new Intent(HiraTest.this, Incorrect.class));
             }
         });
         option3.setOnClickListener(view -> {
             if(option3.getText() == c.getCt()[c.getCurrentIndex()].getAnswer()){
                 //go to true page
                 c.incrementCorrectCount(1);
-                startActivity(new Intent(kata_test.this, Correct.class));
+                startActivity(new Intent(HiraTest.this, Correct.class));
             } else{
                 //go to false page
-                startActivity(new Intent(kata_test.this, Incorrect.class));
+                startActivity(new Intent(HiraTest.this, Incorrect.class));
             }
         });
         option4.setOnClickListener(view -> {
             if(option4.getText() == c.getCt()[c.getCurrentIndex()].getAnswer()){
                 //go to true page
                 c.incrementCorrectCount(1);
-                startActivity(new Intent(kata_test.this, Correct.class));
+                startActivity(new Intent(HiraTest.this, Correct.class));
             } else{
                 //go to false page
-                startActivity(new Intent(kata_test.this, Incorrect.class));
+                startActivity(new Intent(HiraTest.this, Incorrect.class));
             }
         });
 

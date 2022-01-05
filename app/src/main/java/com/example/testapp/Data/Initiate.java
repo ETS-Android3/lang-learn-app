@@ -33,6 +33,7 @@ public class Initiate {
         for(int i = 0; i<savedItems.size(); i++){
             SavedItem temp = savedItems.get(i);
             if(temp.getKey_id().equals(Integer.toString(id))){
+                temp.getChar().setStatus("0");
                 savedItems.remove(savedItems.get(i));
             }
         }

@@ -71,6 +71,7 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.ViewHolder> 
             saved_delete.setOnClickListener(view -> {
                 int position = getAdapterPosition();
                 final SavedItem savedItem = savedItemList.get(position);
+                savedItem.setFavStatus("0");
                 savedDB.remove_saved(savedItem.getKey_id());
                 removeItem(position);
             });

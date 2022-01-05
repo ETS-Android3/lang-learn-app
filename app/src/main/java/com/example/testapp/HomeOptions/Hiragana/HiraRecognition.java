@@ -10,7 +10,7 @@ import com.example.testapp.Data.CharactersTest;
 import com.example.testapp.Data.DataRec;
 import com.example.testapp.Data.Initiate;
 import com.example.testapp.R;
-import com.example.testapp.test.hira_rec_test;
+import com.example.testapp.test.RecTest.HiraRec;
 
 import java.util.Objects;
 
@@ -26,7 +26,7 @@ public class HiraRecognition extends AppCompatActivity {
 
         Button start_button = findViewById(R.id.start_button);
         start_button.setOnClickListener(view -> startActivity(
-                new Intent(HiraRecognition.this, hira_rec_test.class)));
+                new Intent(HiraRecognition.this, HiraRec.class)));
 
 
     }

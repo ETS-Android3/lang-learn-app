@@ -15,8 +15,8 @@ import com.example.testapp.Data.CharactersTest;
 import com.example.testapp.HomeOptions.Hiragana.HiraRecognition;
 import com.example.testapp.HomeOptions.Katakana.KataRecognition;
 import com.example.testapp.R;
-import com.example.testapp.test.hira_rec_test;
-import com.example.testapp.test.kata_rec_test;
+import com.example.testapp.test.RecTest.HiraRec;
+import com.example.testapp.test.RecTest.KataRec;
 
 import java.util.Locale;
 
@@ -72,7 +72,7 @@ public class CorrectRecognition extends AppCompatActivity {
                             CorrectRecognition.this, FinalTest.class));
                 }else{
                     startActivity(new Intent(
-                            CorrectRecognition.this, hira_rec_test.class));
+                            CorrectRecognition.this, HiraRec.class));
                 }
             }else{
                 if(k.getCurrentIndex() == 15){
@@ -81,7 +81,7 @@ public class CorrectRecognition extends AppCompatActivity {
                             CorrectRecognition.this, FinalTest.class));
                 }else{
                     startActivity(new Intent(
-                            CorrectRecognition.this, kata_rec_test.class));
+                            CorrectRecognition.this, KataRec.class));
                 }
             }
         });

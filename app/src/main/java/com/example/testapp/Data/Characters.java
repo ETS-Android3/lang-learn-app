@@ -22,9 +22,7 @@ public class Characters {
         currentIndex = 0;
     }
 
-    public void setStatus(String stat){
-        status = stat;
-    }
+    public void setStatus(String stat){ status = stat; }
 
     public void setCurrentIndex(int index){currentIndex = index;}
 

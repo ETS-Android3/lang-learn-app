@@ -15,12 +15,12 @@
             android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".flash.kata_flash"
+            android:name=".test.flash.KataFlash"
             android:exported="false"
             android:label="@string/aflash"
             android:parentActivityName=".HomeOptions.Katakana.Katakana" />
         <activity
-            android:name=".flash.hira_flash"
+            android:name=".test.flash.HiraFlash"
             android:exported="false"
             android:label="@string/aflash"
             android:parentActivityName=".HomeOptions.Hiragana.Hiragana" />
@@ -74,22 +74,22 @@
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".test.hira_test"
+            android:name=".test.CharTest.HiraTest"
             android:exported="false"
             android:label="@string/hiragana"
             android:parentActivityName=".HomeOptions.Hiragana.HiraganaTestOp" />
         <activity
-            android:name=".test.kata_test"
+            android:name=".test.CharTest.KataTest"
             android:exported="false"
             android:label="@string/katakana"
             android:parentActivityName=".HomeOptions.Katakana.KatakanaTestOp" />
         <activity
-            android:name=".test.kata_rec_test"
+            android:name=".test.RecTest.KataRec"
             android:exported="false"
             android:label="@string/katakana"
             android:parentActivityName=".HomeOptions.Katakana.KataRecognition" />
         <activity
-            android:name=".test.hira_rec_test"
+            android:name=".test.RecTest.HiraRec"
             android:exported="false"
             android:label="@string/hiragana"
             android:parentActivityName=".HomeOptions.Hiragana.HiraRecognition" />

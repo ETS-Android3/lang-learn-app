@@ -1,4 +1,4 @@
-package com.example.testapp.test;
+package com.example.testapp.test.RecTest;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.testapp.Data.CharactersTest;
-import com.example.testapp.HomeOptions.Katakana.KataRecognition;
+import com.example.testapp.HomeOptions.Hiragana.HiraRecognition;
 import com.example.testapp.R;
 import com.example.testapp.test.Pages.Correct;
 import com.example.testapp.test.Pages.CorrectRecognition;
@@ -17,9 +17,9 @@ import com.example.testapp.test.Pages.IncorrectRecognition;
 
 import java.util.Objects;
 
-public class kata_rec_test extends AppCompatActivity {
-    CharactersTest c = KataRecognition.c;
-    CharactersTest[] a = KataRecognition.a;
+public class HiraRec extends AppCompatActivity {
+    CharactersTest c = HiraRecognition.c;
+    CharactersTest[] h = HiraRecognition.h;
     private TextView character;
     private Button option1;
     private Button option2;
@@ -32,8 +32,8 @@ public class kata_rec_test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hira_test);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        CorrectRecognition.hiraTrue = false;
-        CorrectRecognition.kataTrue = true;
+        CorrectRecognition.hiraTrue = true;
+        CorrectRecognition.kataTrue = false;
         Correct.hiraTrue = false;
         Correct.kataTrue = false;
 
@@ -54,22 +54,22 @@ public class kata_rec_test extends AppCompatActivity {
                 //go to you are right page & correct counter++
                 c.incrementCorrectCount(1);
                 startActivity(new Intent(
-                        kata_rec_test.this, CorrectRecognition.class));
+                        HiraRec.this, CorrectRecognition.class));
             } else{
                 //go to incorrect page page
                 startActivity(new Intent(
-                        kata_rec_test.this, IncorrectRecognition.class));
+                        HiraRec.this, IncorrectRecognition.class));
             }
         });
         option2.setOnClickListener(view -> {
             if(option2.getText() == c.getCt()[c.getCurrentIndex()].getAnswer()){
                 c.incrementCorrectCount(1);
                 startActivity(new Intent(
-                        kata_rec_test.this, CorrectRecognition.class));
+                        HiraRec.this, CorrectRecognition.class));
             } else{
                 //go to false page
                 startActivity(new Intent(
-                        kata_rec_test.this, IncorrectRecognition.class));
+                        HiraRec.this, IncorrectRecognition.class));
             }
         });
         option3.setOnClickListener(view -> {
@@ -77,11 +77,11 @@ public class kata_rec_test extends AppCompatActivity {
                 //go to true page
                 c.incrementCorrectCount(1);
                 startActivity(new Intent(
-                        kata_rec_test.this, CorrectRecognition.class));
+                        HiraRec.this, CorrectRecognition.class));
             } else{
                 //go to false page
                 startActivity(new Intent(
-                        kata_rec_test.this, IncorrectRecognition.class));
+                        HiraRec.this, IncorrectRecognition.class));
             }
         });
         option4.setOnClickListener(view -> {
@@ -89,11 +89,11 @@ public class kata_rec_test extends AppCompatActivity {
                 //go to true page
                 c.incrementCorrectCount(1);
                 startActivity(new Intent(
-                        kata_rec_test.this, CorrectRecognition.class));
+                        HiraRec.this, CorrectRecognition.class));
             } else{
                 //go to false page
                 startActivity(new Intent(
-                        kata_rec_test.this, IncorrectRecognition.class));
+                        HiraRec.this, IncorrectRecognition.class));
             }
         });
 
@@ -145,8 +145,8 @@ public class kata_rec_test extends AppCompatActivity {
     }
 
     public void cardSet(){
-        a = c.shuffle(a);
-        c.setCt(a);
+        h = c.shuffle(h);
+        c.setCt(h);
     }
     public void onDestroy() {
 

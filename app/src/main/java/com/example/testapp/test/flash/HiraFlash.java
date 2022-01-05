@@ -1,4 +1,4 @@
-package com.example.testapp.flash;
+package com.example.testapp.test.flash;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.testapp.Data.Characters;
 import com.example.testapp.Data.Initiate;
-import com.example.testapp.HomeOptions.Katakana.Katakana;
+import com.example.testapp.HomeOptions.Hiragana.Hiragana;
 import com.example.testapp.R;
 import com.example.testapp.ui.saved.SavedAdapter;
 import com.example.testapp.ui.saved.SavedItem;
@@ -24,29 +24,30 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Objects;
 
-public class kata_flash extends AppCompatActivity {
+public class HiraFlash extends AppCompatActivity {
     ArrayList<SavedItem> nL = Initiate.getList();
     SavedItem sI;
-    public static Characters c = Katakana.c;
-    public static Characters[] a = Katakana.a;
-    public static Characters[] k = Katakana.k;
-    public static Characters[] h = Katakana.h;
-    public static Characters[] m = Katakana.m;
-    public static Characters[] n = Katakana.n;
-    public static Characters[] r = Katakana.r;
-    public static Characters[] s = Katakana.s;
-    public static Characters[] t = Katakana.t;
-    public static Characters[] yw = Katakana.yw;
-    public static Characters[] g = Katakana.g;
-    public static Characters[] z = Katakana.z;
-    public static Characters[] d = Katakana.d;
-    public static Characters[] b = Katakana.b;
-    public static Characters[] p = Katakana.p;
+    Characters c = Hiragana.c;
+    Characters[] a = Hiragana.a;
+    Characters[] k = Hiragana.k;
+    Characters[] h = Hiragana.h;
+    Characters[] m = Hiragana.m;
+    Characters[] n = Hiragana.n;
+    Characters[] r = Hiragana.r;
+    Characters[] s = Hiragana.s;
+    Characters[] t = Hiragana.t;
+    Characters[] yw = Hiragana.yw;
+    Characters[] g = Hiragana.g;
+    Characters[] z = Hiragana.z;
+    Characters[] d = Hiragana.d;
+    Characters[] b = Hiragana.b;
+    Characters[] p = Hiragana.p;
     private TextView character;
     private TextView phone;
-    private TextView kanaCharacter;
+    private TextView kataCharacter;
     private ImageButton saved_item;
     TextToSpeech tts;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +56,7 @@ public class kata_flash extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         character = findViewById(R.id.charText);
-        kanaCharacter = findViewById(R.id.kanaText);
+        kataCharacter = findViewById(R.id.kanaText);
         phone = findViewById(R.id.phoneticText);
         ImageButton sound = findViewById(R.id.soundButton);
         Button saveButton = findViewById(R.id.saveButton);
@@ -63,7 +64,6 @@ public class kata_flash extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerKata);
         recyclerView.setAdapter(new SavedAdapter(getApplicationContext(),nL));
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-
         tts = new TextToSpeech(getApplicationContext(), status -> {
             if (status == TextToSpeech.SUCCESS) {
                 int result;
@@ -88,15 +88,16 @@ public class kata_flash extends AppCompatActivity {
         sound.setOnClickListener(view -> speak());
 
         saveButton.setOnClickListener(view -> {
-            if (Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 0) {
+            if(Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 0) {
                 c.getCt()[c.getCurrentIndex()].setStatus("1");
                 nL.add(sI);
-            } else if (Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 1) {
+            }else if(Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 1){
                 c.getCt()[c.getCurrentIndex()].setStatus("0");
                 Initiate.removeSaved(c.getCt()[c.getCurrentIndex()].getID());
             }
             checkStatus();
         });
+
         saved_item.setOnClickListener(v -> {
             if(Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 0) {
                 c.getCt()[c.getCurrentIndex()].setStatus("1");
@@ -135,6 +136,7 @@ public class kata_flash extends AppCompatActivity {
             updateChar();
         });
     }
+
     private void checkStatus(){
         if(Integer.parseInt(c.getCt()[c.getCurrentIndex()].getStatus()) == 0){
             saved_item.setForeground(AppCompatResources.getDrawable(
@@ -172,21 +174,19 @@ public class kata_flash extends AppCompatActivity {
     }
 
     private void updateChar(){
-        String kata = c.getCt()[c.getCurrentIndex()].getKataChar();
-        character.setText(kata);
         String hira = c.getCt()[c.getCurrentIndex()].getHiraChar();
-        kanaCharacter.setText("Hiragana: " + hira);
+        character.setText(hira);
+        String kata = c.getCt()[c.getCurrentIndex()].getKataChar();
+        kataCharacter.setText("Katakana: " + kata);
         String pho = c.getCt()[c.getCurrentIndex()].getPhonetics();
         phone.setText(pho);
-        checkStatus();
         sI = new SavedItem(c.getCt()[c.getCurrentIndex()].getHiraChar(),
                 Integer.toString(c.getCt()[c.getCurrentIndex()].getID()),
                 c.getCt()[c.getCurrentIndex()].getKataChar(),
                 c.getCt()[c.getCurrentIndex()].getPhonetics(),
-                c.getCt()[c.getCurrentIndex()].getStatus());
-
+                c.getCt()[c.getCurrentIndex()].getStatus(), c.getCt()[c.getCurrentIndex()]);
+        checkStatus();
     }
-
     public void cardSet(){
         if(Initiate.aT) {
             c.setCt(a);
@@ -218,6 +218,7 @@ public class kata_flash extends AppCompatActivity {
             c.setCt(p);
         }
     }
+
     public void onDestroy() {
         if(tts != null){
             tts.stop();

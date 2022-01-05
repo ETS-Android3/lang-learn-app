@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_test_pale"
-    tools:context=".test.hira_test">
+    tools:context=".test.CharTest.HiraTest">
 
   <TextView
       android:id="@+id/wordText"

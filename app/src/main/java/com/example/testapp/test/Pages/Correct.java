@@ -15,8 +15,8 @@ import com.example.testapp.Data.CharactersTest;
 import com.example.testapp.HomeOptions.Hiragana.HiraganaTestOp;
 import com.example.testapp.HomeOptions.Katakana.KatakanaTestOp;
 import com.example.testapp.R;
-import com.example.testapp.test.hira_test;
-import com.example.testapp.test.kata_test;
+import com.example.testapp.test.CharTest.HiraTest;
+import com.example.testapp.test.CharTest.KataTest;
 
 import java.util.Locale;
 
@@ -70,14 +70,14 @@ public class Correct extends AppCompatActivity {
                     //go to final page
                     startActivity(new Intent(Correct.this, FinalTest.class));
                 }else{
-                    startActivity(new Intent(Correct.this, hira_test.class));
+                    startActivity(new Intent(Correct.this, HiraTest.class));
                 }
             }else{
                 if(k.getCurrentIndex() == 15){
                     //go to final page
                     startActivity(new Intent(Correct.this, FinalTest.class));
                 }else{
-                    startActivity(new Intent(Correct.this, kata_test.class));
+                    startActivity(new Intent(Correct.this, KataTest.class));
                 }
             }
         });

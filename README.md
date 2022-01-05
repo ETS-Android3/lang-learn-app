@@ -15,12 +15,14 @@ Still thinking about how to optimize how I've written and organized the code as 
 combined or changed (but for now, this is what I got).
 
 Data: contains the characters/words for the flash cards & classes that initalize said words.
-flash: contains the code for the character flash cards (character practice buttons)
 HomeOptions: contains the rest of the buttons available on the home screen (now looking at it, flash should be in here)
   - Hiragana: contains the hiragana options
   - Katakana: contains the katakana options
 test: contains the flash card classes for practice tests
   - Pages: contains the redirects to correct/incorrect and the final scoring page
+  - CharTest: contains pages for alphabetized tests
+  - RecTest: contains pages for all character test
+  - flash: contains pages for alphabetized character tests
 ui: the pages for the homepage navigation side bar
   - home: for home
   - kana: for the kana chart

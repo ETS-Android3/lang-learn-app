@@ -5,7 +5,7 @@ I also wanted to learn how to read Japanese for the longest time, but found most
 too much at once, so I decided to make my own for my own purposes.
 It is not complete nor the most efficient (there are still changes to be done), but general goals were met.
 
-Description
+## Description
 _____________
 It is a very basic version of a language learning phone application intended to help users learn how to read and
 recognize Japanese characters (hiragana/katakana)
@@ -35,7 +35,7 @@ Other: main activity & settings (settings is currently useless, just a placehold
     which is useful cause some pages get messed up and look wonky.
 
 
-Requirements
+## Requirements
 _____________
 
 No special requirements necessary. 
@@ -43,7 +43,7 @@ However, for the TTS to work on an android device, the Google TTS engine needs
 to be the default (more relevant for Samsung devices).
 
 
-Referenced Items
+## Referenced Items
 _________________
 For populating the saved list:
 https://github.com/gifffert/FavoriteList/tree/master/app/src/main/java/ru/embersoft/favoritelist

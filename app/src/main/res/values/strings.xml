@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">JLearn</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Japanese Character Practice</string>
+    <string name="nav_header_subtitle">literally simply for character recognition</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_saved">Saved</string>
+    <string name="menu_kana">Kana Chart</string>
+    <string name="menu_stats">Stats</string>
+    <string name="katakana_description">katakana option</string>
+    <string name="hiragana_description">hiragana option</string>
+    <string name="atext">a - o, n, pause</string>
+    <string name="ktext">ka - ko</string>
+    <string name="stext">sa - so</string>
+    <string name="ttext">ta - to</string>
+    <string name="ntext">na - no</string>
+    <string name="htext">ha - ho</string>
+    <string name="mtext">ma - mo</string>
+    <string name="wtext">wa - wo, y</string>
+    <string name="rtext">ra - ro</string>
+    <string name="gtext">ga - go</string>
+    <string name="ztext">za - zo</string>
+    <string name="dtext">da - do</string>
+    <string name="btext">ba - bo</string>
+    <string name="ptext">pa - po</string>
+    <string name="title_activity_aflash">a_flash</string>
+    <string name="title_activity_kflash">k_flash</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="aflash">Characters</string>
+    <string name="hiragana">Hiragana</string>
+    <string name="katakana">Katakana</string>
+    <string name="saveButton">Save</string>
+    <string name="nextButton">Next</string>
+    <string name="prevButton">Previous</string>
+    <string name="kataText" />
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_kata_chart">fragment_kata_chart</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="key_upload_quality">idk</string>
+    <string name="dialog_nothing">Here we are.</string>
+    <string name="see_nothin_sum">But like really, it is nothing</string>
+    <string name="see_nothin">Press to see nothing</string>
+    <string name="bored_click">Click if bored</string>
+    <string name="boarded_click">Click if bored</string>
+    <string name="start">Start</string>
+
+
+    <string-array name="nothing_array">
+        <item>1 Nothing</item>
+        <item>2 Nothing</item>
+        <item>Green Nothing</item>
+        <item>Blue Nothing</item>
+    </string-array>
+
+    <string-array name="pref_duration">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

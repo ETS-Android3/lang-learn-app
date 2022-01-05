@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_abstract">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/abutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:paddingTop="10dp"
+                android:text="@string/atext" />
+
+            <Button
+                android:id="@+id/kbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/ktext" />
+
+            <Button
+                android:id="@+id/sbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/stext" />
+
+            <Button
+                android:id="@+id/tbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/ttext" />
+
+            <Button
+                android:id="@+id/nbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/ntext" />
+
+            <Button
+                android:id="@+id/hbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/htext" />
+
+            <Button
+                android:id="@+id/mbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/mtext" />
+
+            <Button
+                android:id="@+id/rbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/rtext" />
+
+            <Button
+                android:id="@+id/ywbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/wtext" />
+
+            <Button
+                android:id="@+id/gbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/gtext" />
+
+            <Button
+                android:id="@+id/zbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/ztext" />
+
+            <Button
+                android:id="@+id/dbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/dtext" />
+
+            <Button
+                android:id="@+id/bbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/btext" />
+
+            <Button
+                android:id="@+id/pbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/ptext" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

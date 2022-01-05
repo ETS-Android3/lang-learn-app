@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.kana.KanaFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+
+        android:layout_height="620dp"
+        android:background="@drawable/background_kana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tabBar"
+        app:layout_constraintTop_toBottomOf="@+id/tabBar"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/HiraTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hiragana" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/KataTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/katakana" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

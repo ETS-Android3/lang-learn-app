@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable-v21/ic_menu_camera.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable-v21/ic_menu_kana.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable-v21/ic_menu_saved.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable/border.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout-v23/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_aflash.xml" value="0.22" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_correct.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_final_test.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_flash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hflash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hira_rec.xml" value="0.21875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hira_test.xml" value="0.2046875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hira_test_a.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hiragana.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_hiragana_test_op.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_incorrect.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_kata_flash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_katakana.xml" value="0.21875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_kflash.xml" value="0.22" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_options.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_settings.xml" value="0.18478260869565216" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_sflash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_tflash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_yw_flash.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/app_bar_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/content_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/content_main2.xml" value="0.18478260869565216" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_first.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_gallery.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_hira_chart.xml" value="0.2667572463768116" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_home.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_kana.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_kana_h.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_kata_chart.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_saved.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_second.xml" value="0.11005434782608696" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_stats.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/recog_start.xml" value="0.25" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/saved_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/layout/settings_activity.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.3875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/menu/main.xml" value="0.3875" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/mipmap-anydpi-v26/home.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/leejo/AndroidStudioProjects/TestApp/app/src/main/res/xml/root_preferences.xml" value="0.215625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

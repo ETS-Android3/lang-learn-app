@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestApp">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".flash.kata_flash"
+            android:exported="false"
+            android:label="@string/aflash"
+            android:parentActivityName=".HomeOptions.Katakana.Katakana" />
+        <activity
+            android:name=".flash.hira_flash"
+            android:exported="false"
+            android:label="@string/aflash"
+            android:parentActivityName=".HomeOptions.Hiragana.Hiragana" />
+        <activity
+            android:name=".HomeOptions.Hiragana.Hiragana"
+            android:exported="false"
+            android:label="@string/hiragana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeOptions.Hiragana.HiraganaTestOp"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeOptions.Hiragana.HiraRecognition"
+            android:exported="false"
+            android:label="@string/hiragana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeOptions.Katakana.Katakana"
+            android:exported="false"
+            android:label="@string/katakana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeOptions.Katakana.KatakanaTestOp"
+            android:exported="false"
+            android:label="@string/katakana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeOptions.Katakana.KataRecognition"
+            android:exported="false"
+            android:label="@string/katakana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".test.Pages.Incorrect"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".test.Pages.IncorrectRecognition"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".test.Pages.FinalTest"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".test.Pages.Correct"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".test.Pages.CorrectRecognition"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".test.hira_test"
+            android:exported="false"
+            android:label="@string/hiragana"
+            android:parentActivityName=".HomeOptions.Hiragana.HiraganaTestOp" />
+        <activity
+            android:name=".test.kata_test"
+            android:exported="false"
+            android:label="@string/katakana"
+            android:parentActivityName=".HomeOptions.Katakana.KatakanaTestOp" />
+        <activity
+            android:name=".test.kata_rec_test"
+            android:exported="false"
+            android:label="@string/katakana"
+            android:parentActivityName=".HomeOptions.Katakana.KataRecognition" />
+        <activity
+            android:name=".test.hira_rec_test"
+            android:exported="false"
+            android:label="@string/hiragana"
+            android:parentActivityName=".HomeOptions.Hiragana.HiraRecognition" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TestApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

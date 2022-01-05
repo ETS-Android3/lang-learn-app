@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_abstract"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_marginTop="80dp"
+        android:background="#00FFFFFF"
+        android:fadeScrollbars="false"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fadeScrollbars="true"
+                android:fontFamily="@font/maven_pro_bold"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textColor="#3C403D"
+                android:textSize="20sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hiraganaButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="40dp"
+                    android:adjustViewBounds="true"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/hiragana_description"
+                    android:cropToPadding="false"
+                    android:foreground="@drawable/abstract_hi"
+                    android:foregroundGravity="fill"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+                    tools:src="@drawable/abstract_hi" />
+
+                <ImageButton
+                    android:id="@+id/katakanaButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp"
+                    android:accessibilityLiveRegion="polite"
+                    android:background="#00FFFFFF"
+                    android:baselineAlignBottom="false"
+                    android:contentDescription="@string/katakana_description"
+                    android:foreground="@drawable/abstract_ka"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+                    tools:src="@drawable/abstract_ka" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/testTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_bold"
+                android:shadowColor="#03000000"
+                android:text="Character Tests:"
+                android:textAlignment="center"
+                android:textColor="#3C403D"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hiraTestButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="40dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/hiragana_description"
+                    android:foreground="@drawable/abstract_hitest"
+                    android:foregroundGravity="fill"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@drawable/abstract_hitest" />
+
+                <ImageButton
+                    android:id="@+id/kataTestButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp"
+                    android:accessibilityLiveRegion="polite"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/katakana_description"
+                    android:foreground="@drawable/abstract_katest"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@drawable/abstract_katest" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_bold"
+                android:text="Character Recognition Practice:"
+                android:textAlignment="center"
+                android:textColor="#3C403D"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/hiraRecButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="40dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/hiragana_description"
+                    android:foreground="@drawable/abstract_hirec"
+                    android:foregroundGravity="fill"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@drawable/abstract_hirec" />
+
+                <ImageButton
+                    android:id="@+id/kataRecButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp"
+                    android:accessibilityLiveRegion="polite"
+                    android:adjustViewBounds="false"
+                    android:background="#003C403D"
+                    android:contentDescription="@string/katakana_description"
+                    android:foreground="@drawable/abstract_karec"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@drawable/abstract_karec" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
